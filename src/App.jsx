@@ -18,7 +18,7 @@ import anayet from "../public/yt-image/anayet.jpg";
 function App() {
   return (
     <>
-      <div className="flex justify-between items-center container mx-auto mt-5">
+      <div className="flex justify-between items-center container mx-auto mt-5 px-3 md:px-0">
         <div className="flex items-center gap-5">
           <span>
             <LiaBarsSolid className="text-2xl"/>
@@ -26,9 +26,9 @@ function App() {
           <img src={youtubeImg} className="w-[110px] " alt="" />
         </div>
         <div className="flex items-center">
-            <input type="text" className="border-[1px] w-[500px] px-5 focus:border-0 py-2 rounded-r-none rounded-3xl" placeholder="Search" />  
-            <button className="flex border-[1px] px-3 border-l-0 py-2 rounded-l-none rounded-3xl bg-[#eeeded]"><span><CiSearch className="text-2xl"/></span></button>
-          <div className="bg-[#eeeded] rounded-full p-2 ml-5 hover:bg-[#e0dfdf] cursor-pointer">
+            <input type="text" className="border-[1px] md:w-[500px] hidden md:block md:px-5 focus:border-0 py-2 rounded-r-none rounded-3xl" placeholder="Search" />  
+            <button className="flex md:border-[1px] px-3 border-l-0 py-2 rounded-l-none rounded-3xl md:bg-[#eeeded]"><span><CiSearch className="text-2xl"/></span></button>
+          <div className="bg-[#eeeded] rounded-full p-2 ml:2 md:ml-5 hover:bg-[#e0dfdf] cursor-pointer">
             <HiMiniMicrophone className="text-2xl"/>
           </div>
         </div>
@@ -43,9 +43,9 @@ function App() {
           <img src={anayet} alt="profile-picture" className="w-[32px] h-[32px] rounded-full" />
         </div>
       </div>
-      <div className="flex container mx-auto justify-between mt-5">
-        <div className="w-[30%] border-2 mr-5">Left Sidebar</div>
-        <div className="relative overflow-hidden w-70%">
+      <div className="md:flex container mx-auto justify-between mt-5">
+        <div className="w-[30%] border-2 mr-5 hidden md:block">Left Sidebar</div>
+        <div className="relative overflow-hidden w-70% px-8 md:px-0">
           <div className="marquee flex gap-3 mb-10">
             <button className="btn bg-[#030303] text-white">All</button>
             <button className="btn">Music</button>

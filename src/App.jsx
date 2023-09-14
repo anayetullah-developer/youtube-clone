@@ -34,9 +34,9 @@ function App() {
         </div>
         <div className="flex items-center gap-8">
           <span>
-            <RiVideoAddLine className="text-2xl"/>
+            <RiVideoAddLine className="text-2xl hidden md:block"/>
           </span>
-          <div className="relative">
+          <div className="relative hidden md:block">
             <BsBell className="text-2xl"/>
             <div className="absolute top-[-6px] right-[-18px] bg-red-700 text-white rounded-3xl px-[3px] text-[12px]">12+</div>
           </div>

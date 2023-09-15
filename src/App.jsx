@@ -74,7 +74,7 @@ function App() {
         <div className="w-[15%]  border-2 mr-5 hidden md:block">
           Left Sidebar
         </div>
-        <div className="md:w-[85%] px-8">
+        <div className="md:w-[85%] md:px-8">
           <div className="max-w-8xl mb-8 px-8">
             <Slider {...settings}>
               <div style={{ width: 100 }} className="">
@@ -169,7 +169,7 @@ function App() {
               </div>
             </Slider>
           </div>
-          <div className="grid md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-5">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-5">
             <div className="card card-compact bg-base-100 shadow-xl">
               <figure>
                 <img src={asset8} alt="Shoes" />
